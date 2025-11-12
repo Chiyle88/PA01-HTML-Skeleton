@@ -9,5 +9,71 @@
   <h1>Welcome to My Webpage</h1>
   <p>Hello! My name is Chiyle Briggins. I’m a computer science student learning HTML, CSS, and programming fundamentals. 
   This is my very first webpage for PA01 Part 1!</p>
+  <!-- === Feedback Form Section === -->
+<h2>Website Feedback Form</h2>
+
+<form action="#" method="post">
+  <!-- Text fields -->
+  <label for="firstName">First Name:</label><br>
+  <input type="text" id="firstName" name="firstName" required><br><br>
+
+  <label for="lastName">Last Name:</label><br>
+  <input type="text" id="lastName" name="lastName" required><br><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <!-- Password field -->
+  <label for="password">Password:</label><br>
+  <input type="password" id="password" name="password">
+  <!-- Radio buttons -->
+  <p>Do you like our site?</p>
+  <input type="radio" id="yes" name="likeSite" value="yes">
+  <label for="yes">Yes</label>
+  <input type="radio" id="no" name="likeSite" value="no">
+  <label for="no">No</label><br><br>
+
+  <!-- Checkbox -->
+  <input type="checkbox" id="subscribe" name="subscribe">
+  <label for="subscribe">Subscribe to our newsletter</label><br><br>
+
+  <!-- Dropdown list -->
+  <label for="browser">Which browser do you use?</label><br>
+  <select id="browser" name="browser" required>
+    <option value="">Select one...</option>
+    <option value="chrome">Google Chrome</option>
+    <option value="firefox">Mozilla Firefox</option>
+    <option value="safari">Apple Safari</option>
+    <option value="edge">Microsoft Edge</option>
+  </select><br><br>
+
+  <!-- Submit button -->
+  <input type="submit" value="Submit">
+</form>
+<!-- === Favorite Movies Table Section === -->
+<h2>My Favorite Movies</h2>
+<table style="border: 1px solid black; border-collapse: collapse;">
+
+  <tr>
+    <th>Title</th>
+    <th>Genre</th>
+    <th>Year Released</th>
+  </tr>
+  <tr>
+    <td>Inception</td>
+    <td>Science Fiction</td>
+    <td>2010</td>
+  </tr>
+  <tr>
+    <td>Black Panther</td>
+    <td>Action</td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td>Encanto</td>
+    <td>Animated</td>
+    <td>2021</td>
+  </tr>
+</table>
 </body>
 </html>
