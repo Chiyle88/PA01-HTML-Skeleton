@@ -57,3 +57,19 @@ if (userNumber >= 1 && userNumber <= 5) {
 } else {
   console.log("⚠️ Invalid input. Please refresh and enter a number between 1 and 5.");
 }
+// Step 3: Event Listeners & Dynamic DOM Updates
+
+// Wait until the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", function() {
+    // Get button and output paragraph
+    const button = document.getElementById("greetButton");
+    const output = document.getElementById("greetingOutput");
+  
+    //click event listener
+    button.addEventListener("click", function() {
+      output.textContent = "👋 Hello, welcome to my webpage, I Hope you like it!";
+      output.style.color = "blue";
+      output.style.fontWeight = "bold";
+    });
+  });
+  
