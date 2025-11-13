@@ -72,4 +72,31 @@ document.addEventListener("DOMContentLoaded", function() {
       output.style.fontWeight = "bold";
     });
   });
+
+  // Step 4: Fetch API Example
+
+// Wait for the DOM again (or reuse existing listener)
+document.addEventListener("DOMContentLoaded", function() {
+    const factButton = document.getElementById("factButton");
+    const factOutput = document.getElementById("factOutput");
+  
+    factButton.addEventListener("click", async function() {
+      factOutput.textContent = "Loading fact...";
+  
+      try {
+        const response = await fetch("https://dog-api.kinduff.com/api/facts");
+        const data = await response.json();
+  
+        // Display the dog fact
+        factOutput.textContent = `🐶 ${data.facts[0]}`;
+        factOutput.style.color = "green";
+        factOutput.style.fontStyle = "italic";
+      } catch (error) {
+        factOutput.textContent = "⚠️ Error loading dog fact. Please try again.";
+        factOutput.style.color = "red";
+        console.error(error);
+      }
+    });
+  });
+  
   
